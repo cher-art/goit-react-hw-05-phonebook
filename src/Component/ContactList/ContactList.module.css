@@ -1,0 +1,29 @@
+.contactList {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.contactListErr {
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.contactBtn {
+  margin: auto;
+  margin-left: 20px;
+  width: 55px;
+  height: 30px;
+  border: 1px solid black;
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.contactBtn:hover,
+:focus {
+  color: black;
+  background-color: white;
+  transition: 0.5ms;
+  outline: none;
+  transition: 0.5s;
+}

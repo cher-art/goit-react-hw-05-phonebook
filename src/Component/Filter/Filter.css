@@ -1,0 +1,14 @@
+.label-enter {
+  opacity: 0;
+}
+.label-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.label-exit {
+  opacity: 1;
+}
+.label-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}

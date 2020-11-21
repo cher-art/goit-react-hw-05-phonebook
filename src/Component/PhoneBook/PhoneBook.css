@@ -1,0 +1,106 @@
+.logo-appear {
+  transform: translateX(-50%);
+}
+
+.logo-appear-active{
+  transform: translateX(0%);
+  transition: transform 500ms linear;
+}
+.form-appear{
+  transform: translateX(-110%);
+}
+
+.form-appear-active{
+  transform: translateX(0);
+  transition: transform 500ms linear 500ms;
+}
+
+.contactTitle-enter {
+  opacity: 0;
+}
+
+.contactTitle-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.contactTitle-exit {
+  opacity: 1;
+}
+
+.contactTitle-exit-active{
+  opacity: 0;
+  transition: opacity 500ms linear ;
+}
+
+
+.notFound-enter {
+  opacity: 0;
+}
+.notFound-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.notFound-exit {
+  opacity: 1;
+}
+.notFound-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.alert__Box {
+  position: absolute;
+  top: 25px;
+  right: 35%;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  width: 350px;
+  /* transform: translateX(50%); */
+  transform: translateY(50%);
+  border: 1px solid rgb(180, 14, 14);
+  border-radius: 20px;
+}
+
+.alertButton {
+  padding: 5px 75px;
+  border: none;
+  border-radius: 10px;
+}
+
+.alert__Box-enter-active {
+  animation: alert 800ms ease-in alternate-reverse;
+}
+
+@keyframes alert {
+  0% {
+    transform: translateY(50%);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+}
+
+.alert__Box-exit-active {
+  animation: alertBack 800ms ease-in-out;
+}
+
+@keyframes alertBack {
+  0% {
+    transform: translateY(50%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 0.3;
+    transform: translateY(10%);
+  }
+}

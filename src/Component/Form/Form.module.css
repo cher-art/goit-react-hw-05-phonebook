@@ -1,0 +1,39 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.mainLabel {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainInput {
+  width: 200px;
+  padding: 2px 0px 2px 5px;
+}
+
+.formBtn {
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.formBtn:hover,
+:focus {
+  color: black;
+  background-color: white;
+  transition: 0.5ms;
+  outline: none;
+  transition: 0.5s;
+}
